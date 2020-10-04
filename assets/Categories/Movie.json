@@ -1,0 +1,80 @@
+[
+  {
+    "1": "Who won the Best Footballer 2016 in the World?",
+    "2": "Who is the UN Secretary General ?",
+    "3": "NASA launched the ‘OSIRIS-REx’ Mission to collect samples from which asteroid?",
+    "4": "In Bihar, UNESCO has declared which place as a World Heritage Site?",
+    "5": "How many satellites in a single mission using PSLV C-34 launched in 2016?",
+    "6": "Reliance Jio has launched which digital wallet service for peoples?",
+    "7": "Who has been appointed as Lt Governor of Puducherry for 2 years?",
+    "8": "Which service is used for sending or receiving mail on the internet?",
+    "9": "Which planet have the ‘Great Red Spot’?"
+  },
+  {
+    "1": {
+      "a": "Cristiano Ronaldo",
+      "b": "Cristiano Robert",
+      "c": "Robert Paul",
+      "d": "Mark Admin"
+    },
+    "2": {
+      "a": "Antonio Guterres",
+      "b": "Cristiano Robert",
+      "c": "Robert Paul",
+      "d": "Mark Admin"
+    },
+    "3": {
+      "a": "Robert Paul",
+      "b": "Cristiano Robert",
+      "c": "Asteroid Bennu",
+      "d": "Mark Admin"
+    },
+    "4": {
+      "a": "Bihar’s ancient Nalanda University",
+      "b": "Jaipur National University",
+      "c": "Takshila University",
+      "d": "Jagjivan University"
+    },
+    "5": {
+      "a": "30 satellites",
+      "b": "20 satellites",
+      "c": "4 satellites",
+      "d": "5 satellites"
+    },
+    "6": {
+      "a": "JioMoney",
+      "b": "Reliance Money",
+      "c": "Airtal",
+      "d": "Jio app"
+    },
+    "7": {
+      "a": "Kiran Bedi",
+      "b": "Indira Gandhi",
+      "c": "Sindhu",
+      "d": "Kiran Kher"
+    },
+    "8": {
+      "a": "Internet",
+      "b": "Skype",
+      "c": "Twitter",
+      "d": "Email"
+    },
+    "9": {
+      "a": "Mars",
+      "b": "Jupiter",
+      "c": "Neptune",
+      "d": "Moon"
+    }
+  },
+  {
+    "1": "Cristiano Ronaldo",
+    "2": "Antonio Guterres",
+    "3": "Asteroid Bennu",
+    "4": "Bihar’s ancient Nalanda University",
+    "5": "20 satellites",
+    "6": "JioMoney",
+    "7": "Kiran Bedi",
+    "8": "Email",
+    "9": "Jupiter"
+  }
+]
