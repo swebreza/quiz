@@ -6,6 +6,8 @@ import 'quiz_complete.dart';
 import 'package:audioplayers/audio_cache.dart';
 import 'home.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
+import 'package:wave/config.dart';
+import 'package:wave/wave.dart';
 
 class getjson extends StatelessWidget {
   String categoryname;
@@ -22,7 +24,7 @@ class getjson extends StatelessWidget {
 
     return FutureBuilder(
       future:
-      DefaultAssetBundle.of(context).loadString(assettoload, cache: false),
+          DefaultAssetBundle.of(context).loadString(assettoload, cache: false),
       builder: (context, snapshot) {
         List mydata = json.decode(snapshot.data.toString());
         if (mydata == null) {
@@ -60,6 +62,9 @@ class _quizpageState extends State<quizpage> {
   int j = 2;
   int timer = 15;
   String showtimer = "15";
+  double height = 0.0;
+  int q = 0;
+
   final player = AudioCache();
   Map<String, Color> btncolor = {
     "a": Colors.deepPurpleAccent,
@@ -69,10 +74,12 @@ class _quizpageState extends State<quizpage> {
   };
 
   bool canceltimer = false;
+  bool cancelheight = false;
 
   @override
   void initState() {
     starttimer();
+    h();
     super.initState();
   }
 
@@ -83,9 +90,17 @@ class _quizpageState extends State<quizpage> {
     }
   }
 
+  void h() async {
+    const hh = Duration(milliseconds: 200);
+    Timer.periodic(hh, (Timer t) {
+      setState(() {
+          height = height + 0.01;
+          q = q + 1;
+      },);
+    });
+  }
   void starttimer() async {
-    const onesec = Duration(seconds: 1);
-    Timer.periodic(onesec, (Timer t) {
+    Timer.periodic(Duration(seconds: 1), (Timer t) {
       setState(() {
         if (timer < 1) {
           t.cancel();
@@ -103,8 +118,9 @@ class _quizpageState extends State<quizpage> {
   void nextquestion() {
     canceltimer = false;
     timer = 15;
+    height = 0.00;
     setState(() {
-      if (mydata[2][j.toString()]!=null) {
+      if (mydata[2][j.toString()] != null) {
         i = j;
         j++;
       } else {
@@ -119,6 +135,7 @@ class _quizpageState extends State<quizpage> {
       disableAnswer = false;
     });
     starttimer();
+
   }
 
   void checkanswer(String k) {
@@ -128,8 +145,6 @@ class _quizpageState extends State<quizpage> {
 
     Timer(Duration(milliseconds: 1499), nextquestion);
     setState(() {
-      canceltimer = true;
-      disableAnswer = true;
       if (mydata[2][i.toString()] == mydata[1][i.toString()]['a']) {
         btncolor['a'] = Colors.green[500];
       }
@@ -145,10 +160,12 @@ class _quizpageState extends State<quizpage> {
       if (mydata[2][i.toString()] != mydata[1][i.toString()][k]) {
         btncolor[k] = Colors.red[500];
         player.play('wrong_ans.wav');
-      }
-      else{
+      } else {
         player.play('right_ans.wav');
       }
+      canceltimer = true;
+      //cancelheight = true;
+      disableAnswer = true;
     });
   }
 
@@ -159,7 +176,7 @@ class _quizpageState extends State<quizpage> {
         horizontal: 20.0,
       ),
       child: MaterialButton(
-        onPressed: () => checkanswer(k),
+        onPressed: () => disableAnswer ? null : checkanswer(k),
         child: Text(
           mydata[1][i.toString()][k],
           style: TextStyle(
@@ -173,7 +190,7 @@ class _quizpageState extends State<quizpage> {
         minWidth: 200.0,
         height: 45.0,
         shape:
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       ),
     );
   }
@@ -188,20 +205,22 @@ class _quizpageState extends State<quizpage> {
           return showDialog(
               context: context,
               builder: (context) => AlertDialog(
-                content: Text("You want to exit"),
-                actions: <Widget>[
-                  FlatButton(
-                    onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => HomePage(),
-                      ));canceltimer = false;
-                    },
-                    child: Text(
-                      'Yes',
-                    ),
-                  )
-                ],
-              ));
+                    content: Text("You want to exit"),
+                    actions: <Widget>[
+                      FlatButton(
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushReplacement(MaterialPageRoute(
+                            builder: (context) => HomePage(),
+                          ));
+                          canceltimer = false;
+                        },
+                        child: Text(
+                          'Yes',
+                        ),
+                      )
+                    ],
+                  ));
         },
         child: Scaffold(
           body: Stack(
@@ -211,9 +230,9 @@ class _quizpageState extends State<quizpage> {
                 child: Container(
                   decoration: BoxDecoration(
                       gradient: LinearGradient(colors: [
-                        Colors.pinkAccent,
-                        Colors.deepPurpleAccent,
-                      ])),
+                    Colors.pinkAccent,
+                    Colors.deepPurpleAccent,
+                  ])),
                   height: 200,
                 ),
               ),
@@ -252,15 +271,49 @@ class _quizpageState extends State<quizpage> {
                         choicebutton('d'),
                       ],
                     ),
-                    SizedBox(height: 120),
-                    Column(
+                    SizedBox(height: 45),
+                    Stack(
                       children: <Widget>[
-                        Text(
-                          showtimer,
-                          style: TextStyle(
-                            fontSize: 34,
-                            fontWeight: FontWeight.w700,
-                            fontFamily: 'Times New Roman',
+                        Container(
+                          height: 100.0,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.deepPurpleAccent,width: 4),
+                            borderRadius: BorderRadius.all(Radius.circular(50))
+                          ),
+                          child: Card(
+                            elevation: 14.0,
+                            clipBehavior: Clip.antiAlias,
+                            shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(50.0))),
+                            child: WaveWidget(
+                              config: CustomConfig(
+                                gradients: [
+                                  [Colors.blueAccent, Colors.pink,],
+                                ],
+                                durations: [11000],
+                                heightPercentages: [height],
+                                gradientBegin: Alignment.bottomLeft,
+                                gradientEnd: Alignment.topRight,
+                              ),
+                              backgroundColor: Colors.white,
+                              size: Size(double.infinity, double.infinity),
+                              waveAmplitude: 0,
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          right: 35,
+                          top: 35,
+                          child: Text(
+                            showtimer,
+                            style: TextStyle(
+                              fontSize: 34,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w600,
+                              fontFamily: 'Times New Roman',
+                            ),
                           ),
                         ),
                       ],

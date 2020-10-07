@@ -12,6 +12,7 @@ dependencies:
   flutter_custom_clippers: ^1.1.2
   audioplayers: ^0.16.1
   font_awesome_flutter: ^8.4.0
+  wave: ^0.1.0
 
 dev_dependencies:
   flutter_test:
