@@ -1,0 +1,143 @@
+{
+    "Questions" : [ null, {
+    "answer" : "Hagrid",
+    "option1" : "Hagrid",
+    "option2" : "Ron Weasley",
+    "option3" : "Hermione",
+    "option4" : "Mundungus Fletcher",
+    "question1" : "Who brought Harry to Hogwarts when he was matured to go there?"
+  }, {
+    "answer" : "Death Eaters",
+    "option1" : "Dementors",
+    "option2" : "Death Eaters",
+    "option3" : "Scabbers",
+    "option4" : "None of the above",
+    "question2" : "What is the name given to the most ardent followers of Lord Voldemort?"
+  }, {
+    "answer" : "Spiders",
+    "option1" : "Frogs",
+    "option2" : "Rats",
+    "option3" : "Snails",
+    "option4" : "Spiders",
+    "question3" : "Ronald Weasleyhad a phobia on which insect?"
+  }, {
+    "answer" : "Doe",
+    "option1" : "Doe",
+    "option2" : "Otter",
+    "option3" : "Jack Russell Terrier",
+    "option4" : "Horse",
+    "question4" : "What was The Patronus of Snape?"
+  }, {
+    "answer" : "11",
+    "option1" : "9",
+    "option2" : "11",
+    "option3" : "16",
+    "option4" : "18",
+    "question5" : "At what age one can join in Hogwarts School of Witchcraft?"
+  }, {
+    "answer" : "A photo album of his parents",
+    "option1" : "The Invisibility Cloak",
+    "option2" : "Hedwig",
+    "option3" : "A wooden flute",
+    "option4" : "A photo album of his parents",
+    "question6" : "Towards the end of the first book ‘Harry Potter and the Philosopher’s Stone’, what gift did Hagrid give to Harry?"
+  }, {
+    "answer" : "Wizarding Chess",
+    "option1" : "Guards of Hogwards",
+    "option2" : "Wizarding Chess",
+    "option3" : "Three headed Dog",
+    "option4" : "She herself",
+    "question7" : "What does Professor McGonagall placed in order to guard sorcerer’s stone?"
+  }, {
+    "answer" : "Snake",
+    "option1" : "Spider",
+    "option2" : "Dragon",
+    "option3" : "Snake",
+    "option4" : "3 headed Dog",
+    "question8" : "Which animal attacked Ron’s father when Harry had an intense dream?"
+  }, {
+    "answer" : "July 31",
+    "option1" : "March 20",
+    "option2" : "June 14",
+    "option3" : "October 27",
+    "option4" : "July 31",
+    "question9" : "When is Harry Potter’s birthday?"
+  }, {
+    "answer" : "Mundungus Fletcher",
+    "option1" : "Arabella Figg",
+    "option2" : "Mundungus Fletcher",
+    "option3" : "Lord Voldemort",
+    "option4" : "Peter Pettigrew",
+    "question10" : "At the moment of Mad Eye’s death, who was flying with him?"
+  }, {
+    "answer" : "The Fat Lady",
+    "option1" : "The Fat Lady",
+    "option2" : "Rubeus Hagrid",
+    "option3" : "Mundungus Fletcher",
+    "option4" : "Professor McGonagall",
+    "question11" : "Who is the security guard at the entrance of Gryffindor’s Common room?"
+  }, {
+    "answer" : "Dentists",
+    "option1" : "Wizards",
+    "option2" : "Servants",
+    "option3" : "Dentists",
+    "option4" : "Lawyers",
+    "question12" : "What is the occupation of Hermione’s parents?"
+  }, {
+    "answer" : "Roger Davies",
+    "option1" : "Draco Malfoy",
+    "option2" : "Roger Davies",
+    "option3" : "Pansy Parkinson",
+    "option4" : "Neville Longbottom",
+    "question13" : "Who guided Fleur to the Yule Ball?"
+  }, {
+    "answer" : "A Basilisk",
+    "option1" : "Nagini",
+    "option2" : "A Basilisk",
+    "option3" : "Tom Riddle",
+    "option4" : "Bathilda",
+    "question14" : " There is a magical beast, a bright green snake which is hidden in the chamber of Secrets. What is its name?"
+  }, {
+    "answer" : "Green",
+    "option1" : "Brown",
+    "option2" : "Black",
+    "option3" : "Green",
+    "option4" : "Blue",
+    "question15" : "Harry Potters’s eyes have a particular color. Which is that color?"
+  }, {
+    "answer" : "Tom Marvolo Riddle",
+    "option1" : "Dobby",
+    "option2" : "Tom Marvolo Riddle",
+    "option3" : "Pigwidgeon",
+    "option4" : "Severus Snape",
+    "question16" : "What's the actual name of Lord Voldemort?"
+  }, {
+    "answer" : "Seeker",
+    "option1" : "Keeper",
+    "option2" : "Seeker",
+    "option3" : "Chaser",
+    "option4" : "Beater",
+    "question17" : "In which player position Harry belongs to the Gryffindor Quidditch Team?"
+  }, {
+    "answer" : "Grindelwald",
+    "option1" : "Harry Potter",
+    "option2" : "Merlin",
+    "option3" : "Grindelwald",
+    "option4" : "Lord Voldemort",
+    "question18" : "Who defeated Albus Dumbledore in a Global wizarding war in 1945?"
+  }, {
+    "answer" : "J.K. Rowling",
+    "option1" : "Hermione",
+    "option2" : "Ron Weasley",
+    "option3" : "Lily Evans Potter",
+    "option4" : "J.K. Rowling",
+    "question19" : "The birthday of Harry Potter is the same day as that of another one’s also. Who is that person?"
+  }, {
+    "answer" : "Slytherin",
+    "option1" : "Gryffindor",
+    "option2" : "Ravenclaw",
+    "option3" : "Slytherin",
+    "option4" : "Hufflepuff",
+    "question20" : "In which House did Sorting hat want to include Harry?"
+  } ]
+}

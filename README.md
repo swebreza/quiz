@@ -1,1 +1,2 @@
-Quiz app build in Flutter 
+# Description
+Quiz app build using [Flutter](https://flutter.dev/)
