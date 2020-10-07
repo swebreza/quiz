@@ -1,0 +1,88 @@
+[
+  {
+    "1": "What country has the second largest population in the world? (till date (July 1, 2020))",
+    "2": "What country has a maple leaf on their national flag?",
+    "3": "Tapas and paella are dishes that originated in what country?",
+    "4": "What is the largest country (by size and population) in South America?",
+    "5": "Mount Fuji is the highest mountain in what country?",
+    "6": "In what country was Nelson Mandela born?",
+    "7": "Zurich is the largest city in what country?",
+    "8": "Adidas and Volkswagen are companies from what country?",
+    "9": "Leonardo da Vinci was born in what country?",
+    "10": "In what country is the Great Pyramid of Giza found?"
+  },
+  {
+    "1": {
+      "a": "Indonesia",
+      "b": "China",
+      "c": "India",
+      "d": "United States"
+    },
+    "2": {
+      "a": "Germany",
+      "b": "Canada",
+      "c": "Angola",
+      "d": "Brazil"
+    },
+    "3": {
+      "a": "Spain",
+      "b": "Cambodia",
+      "c": "Iceland",
+      "d": "Portugal"
+    },
+    "4": {
+      "a": "Argentina",
+      "b": "Peru",
+      "c": "Chile",
+      "d": "Brazil"
+    },
+    "5": {
+      "a": "Vietnam",
+      "b": "Singapore",
+      "c": "Japan",
+      "d": "Switzerland"
+    },
+    "6": {
+      "a": "South Africa",
+      "b": "Malaysia",
+      "c": "Kenya",
+      "d": "France"
+    },
+    "7": {
+      "a": "Iceland",
+      "b": "Cuba",
+      "c": "Switzerland",
+      "d": "Austria"
+    },
+    "8": {
+      "a": "United Kingdom",
+      "b": "Finland",
+      "c": "Germany",
+      "d": "Norway"
+    },
+    "9": {
+      "a": "United Kingdom",
+      "b": "United States of America",
+      "c": "Italy",
+      "d": "Bahamas"
+    },
+    "10": {
+      "a": "Russia",
+      "b": "Jupiter",
+      "c": "Turkey",
+      "d": "China"
+    }
+  },
+  {
+    "1": "India",
+    "2": "Canada",
+    "3": "Spain",
+    "4": "Brazil",
+    "5": "Japan",
+    "6": "South Africa",
+    "7": "Switzerland",
+    "8": "Germany",
+    "9": "Italy",
+    "10": "Egypt"
+  }
+]
