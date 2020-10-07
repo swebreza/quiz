@@ -1,0 +1,88 @@
+[
+  {
+    "1": "Solar power generates electricity from what source?",
+    "2": "Bacterial infections in humans can be treated with what?",
+    "3": "The solid state of water is known as what?",
+    "4": "Water freezes at what temperature?",
+    "5": "What is the chemical formula of water?",
+    "6": "A single piece of coiled DNA is known as a?",
+    "7": "What is the name of the process used by plants to convert sunlight into food?",
+    "8": "Pure water has a pH level of a around what number?",
+    "9": "What is the percentage of water coverage of the Earth’s surface?",
+    "10": "What is the sweet substance made by bees?"
+  },
+  {
+    "1": {
+      "a": "The Sun",
+      "b": "The Sea",
+      "c": "The Land",
+      "d": "The Lava"
+    },
+    "2": {
+      "a": "Hydrochlorothiazide",
+      "b": "Adderall",
+      "c": "Antibiotics",
+      "d": "Loratadine"
+    },
+    "3": {
+      "a": "Ice water",
+      "b": "Ice",
+      "c": "Mixture of ice and water",
+      "d": "boiling water"
+    },
+    "4": {
+      "a": "237 °C (269 °F)",
+      "b": "0 °C (32 °F)",
+      "c": "12 °C (44 °F)",
+      "d": "-12°C (20 °F)"
+    },
+    "5": {
+      "a": "H0",
+      "b": "H20",
+      "c": "H202",
+      "d": "H02"
+    },
+    "6": {
+      "a": "Chromosome",
+      "b": "Nucleus",
+      "c": "Mitochondria",
+      "d": "Deoxyribose"
+    },
+    "7": {
+      "a": "Transpiration",
+      "b": "Hybridisation",
+      "c": "Photosynthesis",
+      "d": "Morphogenesis"
+    },
+    "8": {
+      "a": "6",
+      "b": "7",
+      "c": "8",
+      "d": "9"
+    },
+    "9": {
+      "a": "Around 30%",
+      "b": "Around 50%",
+      "c": "Around 70%",
+      "d": "Around 90%"
+    },
+    "10": {
+      "a": "Honey",
+      "b": "Cheese",
+      "c": "Milk",
+      "d": "Rennet"
+    }
+  },
+  {
+    "1": "The Sun",
+    "2": "Antibiotics",
+    "3": "Ice",
+    "4": "0 °C (32 °F)",
+    "5": "H20",
+    "6": "Chromosome",
+    "7": "Photosynthesis",
+    "8": "7",
+    "9": "Around 70%",
+    "10": "Honey"
+  }
+]
