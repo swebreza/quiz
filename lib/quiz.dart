@@ -79,7 +79,7 @@ class _quizpageState extends State<quizpage> {
   @override
   void initState() {
     starttimer();
-    h();
+    timerheight();
     super.initState();
   }
 
@@ -90,15 +90,17 @@ class _quizpageState extends State<quizpage> {
     }
   }
 
-  void h() async {
-    const hh = Duration(milliseconds: 200);
-    Timer.periodic(hh, (Timer t) {
+  void timerheight() async {
+    const delay = Duration(milliseconds: 200);
+    Timer.periodic(delay, (Timer) {
       setState(() {
           height = height + 0.01;
           q = q + 1;
-      },);
+        },
+      );
     });
   }
+
   void starttimer() async {
     Timer.periodic(Duration(seconds: 1), (Timer t) {
       setState(() {
@@ -135,7 +137,6 @@ class _quizpageState extends State<quizpage> {
       disableAnswer = false;
     });
     starttimer();
-
   }
 
   void checkanswer(String k) {
@@ -164,7 +165,6 @@ class _quizpageState extends State<quizpage> {
         player.play('right_ans.wav');
       }
       canceltimer = true;
-      //cancelheight = true;
       disableAnswer = true;
     });
   }
@@ -278,9 +278,10 @@ class _quizpageState extends State<quizpage> {
                           height: 100.0,
                           width: 100,
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.deepPurpleAccent,width: 4),
-                            borderRadius: BorderRadius.all(Radius.circular(50))
-                          ),
+                              border: Border.all(
+                                  color: Colors.deepPurpleAccent, width: 4),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(50))),
                           child: Card(
                             elevation: 14.0,
                             clipBehavior: Clip.antiAlias,
@@ -290,7 +291,10 @@ class _quizpageState extends State<quizpage> {
                             child: WaveWidget(
                               config: CustomConfig(
                                 gradients: [
-                                  [Colors.blueAccent, Colors.pink,],
+                                  [
+                                    Colors.blueAccent,
+                                    Colors.pink,
+                                  ],
                                 ],
                                 durations: [11000],
                                 heightPercentages: [height],
