@@ -22,7 +22,7 @@ class getjson extends StatelessWidget {
 
     return FutureBuilder(
       future:
-      DefaultAssetBundle.of(context).loadString(assettoload, cache: false),
+          DefaultAssetBundle.of(context).loadString(assettoload, cache: false),
       builder: (context, snapshot) {
         List mydata = json.decode(snapshot.data.toString());
         if (mydata == null) {
@@ -104,7 +104,7 @@ class _quizpageState extends State<quizpage> {
     canceltimer = false;
     timer = 15;
     setState(() {
-      if (mydata[2][j.toString()]!=null) {
+      if (mydata[2][j.toString()] != null) {
         i = j;
         j++;
       } else {
@@ -145,8 +145,7 @@ class _quizpageState extends State<quizpage> {
       if (mydata[2][i.toString()] != mydata[1][i.toString()][k]) {
         btncolor[k] = Colors.red[500];
         player.play('wrong_ans.wav');
-      }
-      else{
+      } else {
         player.play('right_ans.wav');
       }
     });
@@ -173,13 +172,15 @@ class _quizpageState extends State<quizpage> {
         minWidth: 200.0,
         height: 45.0,
         shape:
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     SystemChrome.setPreferredOrientations(
         [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return SafeArea(
@@ -188,20 +189,22 @@ class _quizpageState extends State<quizpage> {
           return showDialog(
               context: context,
               builder: (context) => AlertDialog(
-                content: Text("You want to exit"),
-                actions: <Widget>[
-                  FlatButton(
-                    onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => HomePage(),
-                      ));canceltimer = false;
-                    },
-                    child: Text(
-                      'Yes',
-                    ),
-                  )
-                ],
-              ));
+                    content: Text("You want to exit"),
+                    actions: <Widget>[
+                      FlatButton(
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushReplacement(MaterialPageRoute(
+                            builder: (context) => HomePage(),
+                          ));
+                          canceltimer = false;
+                        },
+                        child: Text(
+                          'Yes',
+                        ),
+                      )
+                    ],
+                  ));
         },
         child: Scaffold(
           body: Stack(
@@ -211,61 +214,66 @@ class _quizpageState extends State<quizpage> {
                 child: Container(
                   decoration: BoxDecoration(
                       gradient: LinearGradient(colors: [
-                        Colors.pinkAccent,
-                        Colors.deepPurpleAccent,
-                      ])),
-                  height: 200,
+                    Colors.pinkAccent,
+                    Colors.deepPurpleAccent,
+                  ])),
+                  height: size.height * 0.3,
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(14.0),
-                child: Column(
-                  children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        CircleAvatar(
-                          backgroundColor: Colors.white70,
-                          child: Text(
-                            "$i",
-                            style: TextStyle(fontSize: 24),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          CircleAvatar(
+                            backgroundColor: Colors.white70,
+                            child: Text(
+                              "$i",
+                              style: TextStyle(fontSize: 24),
+                            ),
                           ),
+                          SizedBox(width: 20.0),
+                          Expanded(
+                            child: Text(
+                              mydata[0][i.toString()],
+                              softWrap: true,
+                              style: TextStyle(
+                                  fontSize: 24.0,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: size.height * 0.15),
+                      Container(
+                        height: size.height * 0.5,
+                        child: Column(
+                          children: <Widget>[
+                            choicebutton('a'),
+                            choicebutton('b'),
+                            choicebutton('c'),
+                            choicebutton('d'),
+                          ],
                         ),
-                        SizedBox(width: 20.0),
-                        Expanded(
-                          child: Text(
-                            mydata[0][i.toString()],
-                            softWrap: true,
+                      ),
+                      SizedBox(height: size.height * .05),
+                      Column(
+                        children: <Widget>[
+                          Text(
+                            showtimer,
                             style: TextStyle(
-                                fontSize: 24.0,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white),
+                              fontSize: 34,
+                              fontWeight: FontWeight.w700,
+                              fontFamily: 'Times New Roman',
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 150.0),
-                    Column(
-                      children: <Widget>[
-                        choicebutton('a'),
-                        choicebutton('b'),
-                        choicebutton('c'),
-                        choicebutton('d'),
-                      ],
-                    ),
-                    SizedBox(height: 120),
-                    Column(
-                      children: <Widget>[
-                        Text(
-                          showtimer,
-                          style: TextStyle(
-                            fontSize: 34,
-                            fontWeight: FontWeight.w700,
-                            fontFamily: 'Times New Roman',
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],

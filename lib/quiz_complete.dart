@@ -3,20 +3,24 @@ import 'package:opentrivia/home.dart';
 
 class resultpage extends StatefulWidget {
   int marks;
-  resultpage({Key key , @required this.marks}) : super(key : key);
+  resultpage({Key key, @required this.marks}) : super(key: key);
   @override
   _resultpageState createState() => _resultpageState(marks);
 }
 
 class _resultpageState extends State<resultpage> {
-
   int marks;
   _resultpageState(this.marks);
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Result",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 33,color: Colors.white70),),
+        title: Text(
+          "Result",
+          style: TextStyle(
+              fontWeight: FontWeight.w600, fontSize: 33, color: Colors.white70),
+        ),
         elevation: 10,
         centerTitle: true,
       ),
@@ -30,12 +34,11 @@ class _resultpageState extends State<resultpage> {
                   children: <Widget>[
                     Material(
                       child: Container(
-                        width: 300.0,
-                        height: 300.0,
+                        height: size.height * .4,
                         child: ClipRect(
                           child: Image(
-                            image: AssetImage(
-                                "assets/Images/Fun.png" ),),
+                            image: AssetImage("assets/Images/Fun.png"),
+                          ),
                         ),
                       ),
                     ),
@@ -53,8 +56,7 @@ class _resultpageState extends State<resultpage> {
                               fontFamily: "Quando",
                             ),
                           ),
-                        )
-                    ),
+                        )),
                   ],
                 ),
               ),
@@ -66,13 +68,16 @@ class _resultpageState extends State<resultpage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 FlatButton(
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
                       builder: (context) => HomePage(),
                     ));
                   },
                   color: Colors.cyan,
-                  child: Text("Continue", style: TextStyle(fontSize: 20.0,color: Colors.white),),
+                  child: Text(
+                    "Continue",
+                    style: TextStyle(fontSize: 20.0, color: Colors.white),
+                  ),
                   padding: EdgeInsets.symmetric(
                     vertical: 12.0,
                     horizontal: 27.0,
