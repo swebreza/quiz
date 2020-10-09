@@ -1,0 +1,88 @@
+[
+  {
+    "1": "What year was the 'Y.M.C.A.' released?",
+    "2": "Which female artist headlined the One Love Manchester concert in 2017?",
+    "3": "What musician was deported from Japan in the 1980’s for possession of marijuana?",
+    "4": "Which band recorded the theme song to Friends?",
+    "5": "In 1984, Prince released his sixth studio album, entitled 'Purple Rain'. What was the album’s lead single?",
+    "6": "Who was the most streamed artist on Spotify in 2019?",
+    "7": "What is the name of Elton John's biopic film?",
+    "8": "What is Taylor Swift’s middle name?",
+    "9": "Which group wrote most of the songs for the movie Saturday Night Fever?",
+    "10": "Every Picture Tells a Story' was the title of an album released by which artist in 1971?"
+  },
+  {
+    "1": {
+      "a": "1978",
+      "b": "1979",
+      "c": "1980",
+      "d": "1981"
+    },
+    "2": {
+      "a": "Ariana Grande",
+      "b": "Camila Cabello",
+      "c": "Selena Gomez.",
+      "d": "Beyoncé"
+    },
+    "3": {
+      "a": "Paul McCartney",
+      "b": "Lady Gaga",
+      "c": "Pink",
+      "d": "Ed sheeran"
+    },
+    "4": {
+      "a": "Touch",
+      "b": "Sing",
+      "c": "Do not break your heart",
+      "d": "I do not want to lose you"
+    },
+    "5": {
+      "a": "When Doves Cry",
+      "b": "When Doves Run",
+      "c": "When Doves Fly",
+      "d": "When Doves Swim"
+    },
+    "6": {
+      "a": "Cold Play",
+      "b": "Post Malone",
+      "c": "David Guetta",
+      "d": "Avicci"
+    },
+    "7": {
+      "a": "Rocketman",
+      "b": "Skyman",
+      "c": "Iceman",
+      "d": "Superman"
+    },
+    "8": {
+      "a": "Aaron",
+      "b": "Amenda",
+      "c": "Alison",
+      "d": "Ali"
+    },
+    "9": {
+      "a": "Harry Styles",
+      "b": "The Bee Gees",
+      "c": "Marvin Gaye",
+      "d": "Beyonce"
+    },
+    "10": {
+      "a": "Rod Stewart",
+      "b": "Ziggy Stardust",
+      "c": "Carl Douglas",
+      "d": "Marc Bolan"
+    }
+  },
+  {
+    "1": "1978",
+    "2": "Ariana Grande",
+    "3": "Paul McCartney",
+    "4": "Touch",
+    "5": "When Doves Cry",
+    "6": "Post Malone",
+    "7": "Rocketman",
+    "8": "Alison",
+    "9": "The Bee Gees",
+    "10": "Rod Stewart"
+  }
+]
